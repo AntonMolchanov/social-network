@@ -1,0 +1,21 @@
+.nav{
+    grid-area: nav;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav-item{
+    list-style: none;
+    margin: 10px 5px;
+    width: calc(100% - 10px);
+}
+.nav-item a{
+    color: white;
+    text-decoration: none;
+}
+
+.active-link{
+    background-color: grey;
+}

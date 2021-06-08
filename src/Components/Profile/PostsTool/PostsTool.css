@@ -1,0 +1,12 @@
+.posts-creation-tool{
+    margin-top: 20px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+.tool-buttons-block{
+    display: flex;
+}
+.btn{
+    padding: 3px 10px;
+}

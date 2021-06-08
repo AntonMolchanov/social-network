@@ -1,0 +1,7 @@
+.dialogs-item{
+    color: white;
+    margin: 20px 5px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}

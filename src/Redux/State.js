@@ -9,6 +9,7 @@ let rerenderEntireTree = () => {
     console.log('state changed')
 }
 
+
 let state = {
     profile: {
         postsData: [
@@ -19,6 +20,12 @@ let state = {
             {id: 5, likeCount: 12, postMessage: 'I`m just a hero....', imageSrc: 'https://png.pngtree.com/png-clipart/20190705/original/pngtree-man-avatar-icon-professional-man-character-png-image_4356027.jpg'},
         ],
         newPostText: 'Share your thoughts here'
+    },
+    getState(){
+        return this.profile
+    },
+    getProfile(){
+        return console.log(this.getState().postsData)
     },
     dialogs: {
         dialogsData: [
@@ -45,6 +52,7 @@ export const addPost = () => {
         postMessage: state.profile.newPostText,
         imageSrc: 'https://png.pngtree.com/png-clipart/20190924/original/pngtree-human-avatar-free-vector-png-image_4825373.jpg',
     }
+    state.getProfile()
     state.profile.postsData.push(newPost)
     updatePostText('')
     rerenderEntireTree(state)
